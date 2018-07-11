@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <Button
+            android:id="@+id/button_propertyActivity"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#330000"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="Property"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button_tenantActivity"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button_propertyActivity"
+            android:background="#4d0000"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:text="Tenant"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_propertyActivity" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tenant"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emilie.property_management_5.PropertyHomePage"
+    android:background="@drawable/backgound4">
+
+    <EditText
+        android:id="@+id/editTextName_tenant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="@string/enter_tenant_name"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/textViewContact_tenant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonImportTenant"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="@color/colorWhite"
+        android:digits="0123456789"
+        android:hint="@string/enter_tenant_conact"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+    <EditText
+        android:id="@+id/textViewEmail_tenant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/buttonImportTenant"
+        android:layout_below="@+id/editTextName_tenant"
+        android:layout_marginTop="14dp"
+        android:backgroundTint="@color/colorWhite"
+        android:hint="@string/enter_tenant_email"
+        android:inputType="textEmailAddress"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite" />
+
+
+    <TextView
+        android:id="@+id/textViewPaymentDate_tenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewEmail_tenant"
+        android:backgroundTint="@color/colorWhite"
+        android:paddingLeft="@dimen/_5sdp"
+        android:hint="Enter tenant payment date"
+        android:inputType="textCapSentences|textAutoCorrect"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonPickDate"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="@color/colorWhite"
+        android:entries="@array/gender" />
+
+    <Button
+        android:id="@+id/buttonAddTenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerGender"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/buttonImportTenant"
+        android:background="@drawable/rect1"
+        android:text="@string/add_contact"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonImportTenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerGender"
+        android:layout_toEndOf="@+id/textViewPaymentDate_tenant"
+        android:background="@drawable/rect1"
+        android:text="@string/import_contact"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listViewTenants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonAddTenant"
+        android:divider="#404040"
+        android:dividerHeight="0.8dp" />
+
+    <Button
+        android:id="@+id/buttonPickDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textViewEmail_tenant"
+        android:background="@drawable/rect3"
+        android:onClick="setDate"
+        android:text="@string/pick" />
+
+
+
+</RelativeLayout>
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgrect"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvPropertyDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/property_detail"
+        android:textColor="#ffffff"
+        android:textSize="23dp"
+        android:layout_marginBottom="50dp"/>
+
+    <TextView
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:drawableLeft="@mipmap/ic_account_circle"
+        android:drawablePadding="16dp"
+        android:hint="@string/edit_profile_name"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/location_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:drawableLeft="@mipmap/ic_location_on"
+        android:drawablePadding="16dp"
+        android:hint="@string/ppt_location"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:id="@+id/rental_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:drawableLeft="@mipmap/ic_attach_money"
+        android:drawablePadding="16dp"
+        android:hint="@string/ppt_rental"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/type_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect"
+        android:drawableLeft="@mipmap/ic_account_balance"
+        android:drawablePadding="16dp"
+        android:hint="@string/ppt_type"
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="16dp"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="10dp"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>
+
+<!--xml reference: https://mega.nz/#!eZIxFDCI!qIptjclKbyOI6OcXk-aQ4CZ58mP_EX&#45;&#45;DI0OAP6Gkgo-->

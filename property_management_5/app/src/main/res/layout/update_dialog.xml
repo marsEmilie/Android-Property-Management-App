@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgound2"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_ppt_name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/textViewPropertyLocation_ud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextName"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorBlack"
+        android:hint="@string/enter_ppt_location"
+        android:inputType="textCapSentences|textAutoCorrect"
+
+        />
+
+    <EditText
+        android:id="@+id/textViewRental_ud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewPropertyLocation"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorBlack"
+        android:hint="@string/enter_ppt_rental"
+        android:inputType="textCapSentences|textAutoCorrect"
+
+        />
+
+
+    <Spinner
+        android:id="@+id/spinnerProperties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:entries="@array/propertyTypeArray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rect3"
+            android:text="@string/update" />
+
+        <Button
+            android:id="@+id/buttonDeleteProperty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:background="@drawable/rect2"
+            android:text="@string/delete" />
+
+    </LinearLayout>
+</LinearLayout>
